@@ -1,0 +1,18 @@
+[project]
+name = "ML_UAP"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Zulvikar Harist", email = "zulvikarharist@gmail.com"},
+]
+dependencies = ["streamlit==1.37.0", "joblib>=1.4.2", "scikit-learn>=1.6.0"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+src="src"
+[tool.pdm.scripts]
+start = "streamlit run src/app.py"
+
+[tool.pdm]
+distribution = false
+
